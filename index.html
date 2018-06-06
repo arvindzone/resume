@@ -29,9 +29,9 @@
 	
 	<!-- Font CSS -->
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-		
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>	
+	
 	<title>Arvind Sreenivas Profile</title>
 	
 	<style>
@@ -61,36 +61,37 @@
 			
 			<!-- Name Plate & Role -->
 			<h1 id="namePlate">
-				<span>- &nbsp;Arvind Sreenivas &nbsp;-</span>
+				<span>- Arvind Sreenivas -</span>
 			</h1>
 			<h2 id="rolePlate">
 				<span>Analyst</span>
 			</h2>
+			
 			<!-- Link Icons -->
 			<table style="position:relative; top: 55%; text-align:center;" align="center" width="250px" >
 				<tr>
 					<th>
 						<div class="tooltip1">
 							<span class="tooltiptext1">About Me</span>
-							<a href="#aboutMe"><i class="material-icons" style="color:white; font-size:35px;">account_circle</i></a>
+							<a href="#aboutMe"><ion-icon name="happy" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip2">
 							<span class="tooltiptext2">Resume</span>
-							<a href="#resume"><i class="material-icons" style="color:white; font-size:35px;">info</i></a>
+							<a href="#myResume"><ion-icon name="school" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip3">
 							<span class="tooltiptext3">Abilities</span>
-							<a href="#abilities"><i class="material-icons" style="color:white; font-size:35px;">help</i></a>
+							<a href="#abilities"><ion-icon name="fitness" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip4">
 							<span class="tooltiptext4">Skills</span>
-							<a href="#skills"><i class="material-icons" style="color:white; font-size:35px;">offline_bolt</i></a>
+							<a href="#skills"><ion-icon name="flash" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 				</tr>
@@ -113,11 +114,11 @@
 					<li><span class="first-block">Email ID:</span><span class="second-block">arvindzone@gmail.com</span></li>
 					<li><span class="first-block">Location:</span><span class="second-block">Bengaluru,Karnataka</span></li>
 					<li></li>
-					 <li><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+					<!-- <li><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 						<div class="linkedin">
 						<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="arvindzone"><a class="LI-simple-link" href='https://in.linkedin.com/in/arvindzone?trk=profile-badge'>Arvind S.</a></div>
 						</div>
-					</li> 
+					</li> --> 
 				</ul>	
 			</div>
 			<div id="aboutMeIntro" class="col-md-8">
@@ -143,16 +144,92 @@
 	<!-- End of ABOUT ME -->
 	
 	<!-- MY RESUME -->
-	<div id="myResume">
+	<div id="myResume" class="container">
 		<div id="myResumeTitle" class="sectionTitle">
 			My Resume
 		</div>
+		
+		<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div style="color:black;"><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Business System Analyst</h3>
+									<span class="company" style='color:orange'>Client Software Services - 2017 - 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>Project EPRO: Worked on staff ERP system designed to assist mid-sized IT consulting and 
+										staffing services firms with various functionalities</p>
+									<p style='text-align:right;'><a href data-toggle="modal" data-target="#CSSLLC">Read More</a></p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Internship</h3>
+									<span class="company" style='color:orange'>Daffy Healthcare Pvt Ltd - Mar - May 2016</span>
+								</div>
+								<div class="timeline-body">
+									<p>Designed, developed & implemented new information system to replace the legacy system and
+										improve organization’s efficiency and effectiveness</p>
+									<p style='text-align:left;'><a href data-toggle="modal" data-target="#daffy">Read More</a></p>
+								</div>
+							</div>
+						</li>
+
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div style="color:black;"><h3>Education</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Master of Business Administration</h3>
+									<span class="company" style='color:orange'>Indiana University of Pennsylvania</span>
+								</div>
+								<div class="timeline-body">
+									<p>Management in IT motivated me to pursue MBA program in
+										<b>Management Information System</b>, accredited by  
+										<a href="https://datadirect.aacsb.edu/public/profiles/profile.cfm?interstitialComplete=1&runReport=1&unitid=54628&userType=All" target="_blank">
+										AACSB International</a>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelor of Computer Application</h3>
+									<span class="company" style='color:orange'>PES University, Bangalore</span>
+								</div>
+								<div class="timeline-body" style='text-align:justify;'>
+									<p>Graduated from one of the best colleges in India.
+										Studied advanced programming languages, network, 
+										software engg & application of computers.
+										
+									</p>
+								</div>
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		
 	</div>
 	<!-- End of MY RESUME -->
 	
 	
 	<br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	AWESOME!
 	asdf<br><br>
 	asdfadsf<br>
