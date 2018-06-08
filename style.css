@@ -216,6 +216,7 @@
 
 #myResume { 
 	padding-bottom: 50px;
+	margin-bottom: 100px;
 }
 #myResumeTitle {
 	padding-top: 107px;
@@ -322,6 +323,7 @@
   line-height: 45px;
   font-size: 1.4em;
   text-align: center;
+  vertical-align: sub;
   position: absolute;
   top: 30px;
   left: 50%;
@@ -329,10 +331,10 @@
   background-color: #FF9000;
   z-index: 100;
   display: table;
-  -webkit-border-radius: 30%;
-  -moz-border-radius: 30%;
-  -ms-border-radius: 30%;
-  border-radius: 30%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .timeline > li > .timeline-badge {
@@ -437,10 +439,59 @@
 
 
 
+#abilitiesTitle {
+	width: 100%;
+	margin-top: 117px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 400px;
+	margin-bottom: 95px;
+}
+.abilitiesIcon {
+	border: 2.5px solid #FF9000;
+	text-align: center;
+	font-size: 45px;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background: white;
+	color: #FF9000;
+	margin-bottom: 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+.feature-copy h3 {
+	font-size: 24px;
+	font-weight: 400px;
+	padding-bottom: 15px;
+}
+.feature-copy p {
+	font-size: 16px;
+	font-weight: 400px;
+	padding-bottom: 25px;
+}
 
+.shake:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
 
-
-
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 
 
