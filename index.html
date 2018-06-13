@@ -32,11 +32,13 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>	
 	
-	<title>Arvind Sreenivas </title>
+	<title>Arvind Sreenivas Profile</title>
 	
 	<style>
 	body {
-		width:100%; 
+		width:100% !important; 
+		max-width: 100%;
+		overflow-x: hidden;
 		padding-right: 0px !important; 
 		font-family: Space Mono, Arial, serif;
 		font-weight: 400; 
@@ -46,11 +48,29 @@
 		background: #fff;
 	}
 	</style>
+	
+	<script>
+		$(window).scroll(function () {
+		  var s = $(window).scrollTop(),
+				d = $(document).height(),
+				c = $(window).height();
+				scrollPercent = (s / (d-c)) * 100;
+				var position = scrollPercent;
+
+		   $("#progressbar").css('width', position+'%');
+
+		});
+	</script>
 		
   </head>
   
   <!-- BODY -->
   <body>
+  
+	<!-- Scroll Tracker -->
+	<div class="progress" style="position:fixed; width:100%; height: 2.5px; z-index:10; background:transparent;">
+		  <div class="progress-bar bg-danger" id='progressbar' role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+	</div> 
     
 	<!-- HEADER -->
 	<div id="headerPage">
@@ -68,30 +88,30 @@
 			</h2>
 			
 			<!-- Link Icons -->
-			<table style="position:relative; top: 55%; text-align:center;" align="center" width="250px" >
+			<table style="position:relative; top: 53%; text-align:center;" align="center" width="210px" >
 				<tr>
 					<th>
 						<div class="tooltip1">
 							<span class="tooltiptext1">About Me</span>
-							<a href="#aboutMe"><ion-icon name="happy" class="pageIcon"></ion-icon></a>
+							<a href="#aboutMe"><ion-icon name="contact" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip2">
 							<span class="tooltiptext2">Resume</span>
-							<a href="#myResume"><ion-icon name="paper-plane" class="pageIcon"></ion-icon></a>
+							<a href="#myResume"><ion-icon name="information-circle" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip3">
 							<span class="tooltiptext3">Abilities</span>
-							<a href="#abilities"><ion-icon name="fitness" class="pageIcon"></ion-icon></a>
+							<a href="#abilities"><ion-icon name="help-circle" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 					<th>
 						<div class="tooltip4">
 							<span class="tooltiptext4">Skills</span>
-							<a href="#skills"><ion-icon name="flash" class="pageIcon"></ion-icon></a>
+							<a href="#skills"><ion-icon name="add-circle" class="pageIcon"></ion-icon></a>
 						</div>
 					</th>
 				</tr>
@@ -114,9 +134,58 @@
 					<li><span class="first-block">Email ID:</span><span class="second-block">arvindzone@gmail.com</span></li>
 					<li><span class="first-block">Location:</span><span class="second-block">Bengaluru,Karnataka</span></li>
 					<li></li>
-					<!-- --> <li><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+					<li>
+						<!--<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 						<div class="linkedin">
 						<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="arvindzone"><a class="LI-simple-link" href='https://in.linkedin.com/in/arvindzone?trk=profile-badge'>Arvind S.</a></div>
+						</div> -->
+						
+						<div style="font-family:Arial, sans-serif; width:310px; height:210px;  border: 0.5px solid #e6e6e6; border-radius:5px; -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);">
+							<table>
+							  <tr>
+								<td colspan="3" rowspan="2" width="135px" height="90px" style="text-align:center; vertical-align: middle;">
+									<img src="images/linkedin_pose.jpg" alt="Avatar" style=" width: 50px; height: 50px; border-radius: 50%;">
+								</td>
+								<td height="40px" style="vertical-align:bottom; font-size:16px; margin-top:10px;">
+									<span onclick="window.location.href='https://www.linkedin.com/in/arvindzone/'" style="cursor: pointer;">
+										<b>Arvind Sreenivas</b>
+									</span>
+								</td>
+							  </tr>
+							  <tr>
+								<td style="vertical-align:top; font-size:15px;">Analyst</td>
+							  </tr>
+							  <tr>
+								<td width="10%" style="text-align:center; vertical-align: middle;">
+									<img src="images/ghost_company_logo.png" alt="icon1" style="width:16px; height:16px;">
+								</td>
+								<td colspan="3" style="vertical-align: middle; font-size:13px;">
+									<span onclick="window.location.href='https://www.linkedin.com/company/client-software-services-llc/?trk=profile-badge-company'" style="cursor: pointer;">
+										Client Software Services, LLC
+									</span>
+								</td>
+							  </tr>
+							  <tr>
+								<td width="10%" style="text-align:center; vertical-align: middle;">
+									<img src="images/iup_logo.png" alt="icon2" style="width:16px; height:16px;">
+								</td>
+								<td colspan="3" style="vertical-align: middle; font-size:13px;">
+									<span onclick="window.location.href='https://www.linkedin.com/school/indiana-university-of-pennsylvania/'" style="cursor: pointer;">
+										Indiana University of Pennsylvania
+									</span>
+								</td>
+							  </tr>
+							  <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td style="text-align:right; vertical-align: sub;">
+									<span onclick="window.location.href='https://www.linkedin.com/in/arvindzone/'" style="cursor: pointer;">
+										<img src="images/logo_linkedin.png" alt="icon2" style="margin-top:15px; margin-right:20px; width:85px; height:20px;">
+									</span>
+								</td>
+							  </tr>
+							</table>
 						</div>
 					</li> 
 				</ul>	
@@ -221,7 +290,7 @@
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" onclick="" style="cursor:pointer;">
+							<div class="timeline-badge" onclick="window.open('https://drive.google.com/file/d/19Fvr025vezdZlhcrYnxc8zUH8D91IrBs/view', '_blank')" style="cursor:pointer;">
 								<div class="tooltip5"><ion-icon name="document"></ion-icon>
 								  <span class="tooltiptext5">Show Full Resume</span>
 								</div>
@@ -316,37 +385,196 @@
 		</div>
 	</div>
 	
+	<div id="skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div id="skillsTitle">
+					Technical Skills
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">MS Office / Visio</span><span class="value-right">95%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Version One</span><span class="value-right">90%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Axure / Balsamiq</span><span class="value-right">80%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">HP Quality Center ALM</span><span class="value-right">85%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<span class="name-left">JIRA / Confluence</span><span class="value-right">97%</span>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">R / R_Studio</span><span class="value-right">70%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Selenium</span><span class="value-right">85%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Tableau</span><span class="value-right">75%</span></h3>
+						<div class="progress" style="height: 5px;">
+							<div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
-	<br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	AWESOME!
-	asdf<br><br>
-	asdfadsf<br>
-	asdfas<br>
-	dfa<br><br>
 	
-	sdfa<br>
+	<div id="contactme" class="container" style='background-color: #f7f7f7;'>
+		<div class="container" style='background-color: #f7f7f7; border-top:65px solid rgba(0, 0, 0, 0.1);border-bottom:100px solid rgba(0, 0, 0, 0.1);border-left:15px solid rgba(0, 0, 0, 0.1);border-right:15px solid rgba(0, 0, 0, 0.1);'>
+			<h2>Contact Arvind</h2>
+			<form id='myForm'>
+				<input type='hidden' id='req' name='req' value='1'>
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="customer" name="customer" class="form-control mandatory" placeholder="Your Full Name" onchange='checkContactForm()' style='background-color:white;' required>
+					</div>
+				</div>
+				
+				<div class="row form-group">
+					<div class="col-md-12">		
+						<input type="text" id="contact" name="contact" class="form-control mandatory" placeholder="Your Email / Phone No" onchange='checkContactForm()' style='background-color:white;' required>
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea id="message" name="message" cols="30" rows="10" class="form-control mandatory" placeholder="Type Your Message Here" onchange='checkContactForm()' style='background-color:white;' required></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<button type="submit" id='contactEmailButton' class="btn btn-primary btn-lg" style="letter-spacing: 2px;" onclick='launch()'>SEND MESSAGE</button>
+				</div>
+			</form>	
+			<div id="resultDIV">
+				Thank you for your message. Arvind usually responds within 30 mins. 
+			</div>
+		</div>
+	</div>
+
+	<!-- CSSLLC Modal -->
+	<div class="modal fade" id="CSSLLC" tabindex="-1" role="dialog" aria-labelledby="CSSLLCModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+		  <div class="modal-header" style="background-color:orange;border:5px solid white;border-radius:5px;">
+			<h4 class="modal-title" id="CSSLLCModalLongTitle" style='font-size:18px; text-align:left;color:white;'><b>Client Software Services, MD</b></h4>
+			<h4 class="modal-title"  style='font-size:18px; text-align:right;color:white;'>Jan 2017 - Current</h4>
+		  </div>
+		  <div class="modal-body">
+			<b>Summary:</b><br>
+			CSS is an IT consulting firm with a business of providing IT solutions and services. I worked on EPRO – staff ERP system, a project based on business process management which includes modules such as secure login, timesheets, accounting (payroll solutions, invoices), professional services automation module (onboarding, immigration & legal compliance and documentation portal), talent HR management (hiring, marketing, performance review), etc. 
+			<br><br><b>Responsibilities</b>: 
+			<ul>
+				<li>Responsible for analysis, design and developing technical & business requirements.</li>
+				<li>Interacted with SME, Project Managers, Developers, QA resources & conducted JAD sessions, interviews with end-users, collaboration sessions for managing requirements.</li>
+				<li>Worked with different users to develop Business Requirement Specifications and gathered Business Rules, Functional & Non-Functional Requirements.</li>
+				<li>Analyse business requirements to translate them into detailed system-level requirements, software requirement specification and functional model. </li>
+				<li>Documented AS-IS & TO-BE Business work flow adhering to UML standards. Created Use Case Diagrams to show relationship & interaction between actors & use cases.</li>
+				<li>Presented information, analysis, ideas and positions in a clear and convincing manner to both technical & nontechnical audiences. Wrote complex SQL to validate BI reports.</li>
+				<li>Prioritizing tasks to ensure work is on schedule, within budget & meeting client’s need. </li>
+				<li>Worked closely with QA team and performed Functional & GUI Testing to meet user acceptance criteria. Coordinated UAT with SME’s to ensure requirement are addressed. </li>
+				<li>Responsible for requirements gathering, identifying data set and data analysis for dashboards and reports utilizing software for its end users.</li>
+				<li>Participated in post-production reviews & update required documents when necessary.</li>
+			</ul>
+			<br><b>Environment</b>: MS Word, Excel, PowerPoint, Visio, Web Technologies, JIRA Software, UML, Axure, SQL, Selenium, Amazon Web Services, Agile Methodology.
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div> 
 	
+	<!-- Daffy Modal -->
+	<div class="modal fade" id="daffy" tabindex="-1" role="dialog" aria-labelledby="daffyModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+		  <div class="modal-header" style="background-color:orange;border:5px solid white;border-radius:5px;">
+			<h4 class="modal-title" id="daffyModalLongTitle" style='font-size:18px; text-align:left;color:white;'><b>Daffy Healthcare Pvt Ltd</b></h4>
+			<h4 class="modal-title"  style='font-size:18px; text-align:right;color:white;'>Nov 2014 - Aug 2015</h4>
+		  </div>
+		  <div class="modal-body">
+			<b>Summary:</b><br>
+			Daffy Group is a leading manufacturer of healthcare products, personal care products & nutritional supplements. The project I worked on was to design, develop and implement new information system to improve organization’s efficiency and effectiveness. The goal was to research, analyse, identify barriers and challenges in the flow of information within the existing system and provide technical solutions to implement the same.<br><br><b>Responsibilities</b>: 
+			<ul>
+				<li>Responsible for researching, gathering requirements, designing, developing, testing and implementation of new information and communication system.</li>
+				<li>Examining the existing system and flow of information. Understanding formal and informal communication within the organization hierarchy. </li>
+				<li>Reduce the communication gaps, improve information sharing and knowledge transfer.</li>
+				<li>Analysing the current systems and business model. Conducting requirement analysis and preparing specific proposals for the replacement information system. </li>
+				<li>Prepare detailed analysis of project feasibility, costs and benefits, risks and impact. </li>
+				<li>Identify potential solutions & assess them for both technical and business sustainability. </li>
+				<li>Presenting the proposals to the top management & creating bi-weekly reports to track the progress of the project. Ensure that budgets are adhered to and deadlines are met. </li>
+			</ul>
+			<br>
+		</div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div> 
 	
+
 	
+	<div id="footer" style="width:100%; height:100px; background-color: #FF9000; position:absolute; padding-bottom:100px;">
+		<div class="container" style="color:white; vertical-align:bottom; line-height:100px;">
+			<div>&copy; 2017 Arvind Sreenivas</div>
+		</div>
+	</div>
+
 	
+	<div id="goto" class="gototop" onclick="topFunction()">
+		<ion-icon name="arrow-round-up"></ion-icon>
+	</div>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	<script>
+		// When the user scrolls down 100px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				document.getElementById("goto").style.display = "block";
+			} else {
+				document.getElementById("goto").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 	
     </body>
 </html>
