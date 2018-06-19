@@ -12,6 +12,12 @@
 	#readMore1 {
 		text-align: right;
 	}
+	::-webkit-scrollbar {
+		width: 0px;
+	}
+
+	
+	
 }
 
 /* COLOR OF THE SELECTED TEXT */
