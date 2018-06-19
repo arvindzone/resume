@@ -1,105 +1,114 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-		
-		<!-- CSS Style -->
-		<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html>
+	<title>Arvind Sreenivas Resume</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+	</style>
+	
+	<body class="w3-light-grey">
+		<!-- Page Container -->
+		<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-		
-		<!-- Font CSS -->
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-		<script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>	
-		
-		<title>Arvind Sreenivas Profile</title>
-		
-		<script>
-		$(window).scroll(function () {
-		  var s = $(window).scrollTop(),
-				d = $(document).height(),
-				c = $(window).height();
-				scrollPercent = (s / (d-c)) * 100;
-				var position = scrollPercent;
-
-		   $("#progressbar").css('width', position+'%');
-
-		});		
-		</script>
-	
-	
-	</head>
-	
-	<body>
-	
-	<!-- Scroll Tracker -->
-	<div class="progress" style="position:fixed; width:100%; height: 2.5px; z-index:10; background:transparent;">
-		  <div class="progress-bar bg-danger" id='progressbar' role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-	</div> 
-	
-	<!-- HEADER -->
-	<div id="headerPage">
-		<div id="headerCover" class="container-fluid" style=" ">
-	
-			<!-- Avatar -->
-			<img id="avatar" src="images/pose3.png" alt="AvatarPic" >
-			<a href="#contactme">
-				<input id="hireMeBtn" type="button" value="HIRE ME">
-			</a>
+		  <!-- The Grid -->
+		  <div class="w3-row-padding">
+		  
+			<!-- Left Column -->
+			<div class="w3-third">
 			
-			<!-- Name Plate & Role -->
-			<h1 id="namePlate">
-				<span>- Arvind Sreenivas -</span>
-			</h1>
-			<h2 id="rolePlate">
-				<span>Analyst</span>
-			</h2>
+			  <div class="w3-white w3-text-grey w3-card-4">
+				<div class="w3-display-container w3-center"> <br><br>
+				  <img src="images/pose3.png" style="width:200px; height:200px; border-radius: 50%;" alt="Avatar"> <br><br>
+				  <div class="w3-display-bottom w3-container w3-text-black">
+					<h2>Arvind Sreenivas</h2>
+				  </div>
+				</div>
+				<div class="w3-container">
+				  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Analyst</p>
+				  <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Banagirinagar, Bengaluru</p>
+				  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>arvindzone@gmail.com</p>
+				  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91 8147149140</p>
+				  <p><i class="fa fa-commenting fa-fw w3-margin-right w3-large w3-text-teal"></i>English, Kannada, Telugu, Tamil</p>
+				  <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-teal"></i>linkedin.com/in/arvindzone</p>
+				  <hr>
+
+				  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
+				  <p></p>
+				  <div class="w3-light-grey w3-round-xlarge">
+					<div class="w3-round-xlarge w3-teal" style="height:22px;width:90%">&nbsp;&nbsp;&nbsp; HTML, CSS, Javascript</div>
+				  </div>
+				  <p></p>
+				  <div class="w3-light-grey w3-round-xlarge">
+					<div class="w3-round-xlarge w3-teal" style="height:22px;width:65%">&nbsp;&nbsp;&nbsp; Java, Python, R, PHP</div>
+				  </div>
+				  <p></p>
+				  <div class="w3-light-grey w3-round-xlarge">
+					<div class="w3-round-xlarge w3-teal" style="height:22px;width:75%">&nbsp;&nbsp;&nbsp; MEAN Stack</div>
+				  </div>
+				  <br>
+				</div>
+			  </div><br>
+
+			<!-- End Left Column -->
+			</div>
+
+			<!-- Right Column -->
+			<div class="w3-twothird">
 			
-			<!-- Link Icons -->
-			<table style="position:relative; top: 53%; text-align:center;" align="center" width="210px" >
-				<tr>
-					<th>
-						<div class="tooltip1">
-							<span class="tooltiptext1">About Me</span>
-							<a href="#aboutMe"><ion-icon name="contact" class="pageIcon"></ion-icon></a>
-						</div>
-					</th>
-					<th>
-						<div class="tooltip2">
-							<span class="tooltiptext2">Resume</span>
-							<a href="#myResume"><ion-icon name="information-circle" class="pageIcon"></ion-icon></a>
-						</div>
-					</th>
-					<th>
-						<div class="tooltip3">
-							<span class="tooltiptext3">Abilities</span>
-							<a href="#abilities"><ion-icon name="help-circle" class="pageIcon"></ion-icon></a>
-						</div>
-					</th>
-					<th>
-						<div class="tooltip4">
-							<span class="tooltiptext4">Skills</span>
-							<a href="#skills"><ion-icon name="add-circle" class="pageIcon"></ion-icon></a>
-						</div>
-					</th>
-				</tr>
-			</table>
+			  <div class="w3-container w3-card w3-white w3-margin-bottom">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+				<div class="w3-container">
+				  <h6 class="w3-text-teal w3-right w3-mobile"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - Dec 2014</h6>
+				  <h5 class="w3-opacity"><b>Analyst</b></h5>
+				  <h5 class="w3-medium"><b>Client Software Services LLC</b></h5>
+				  <p>CSS is an IT consulting firm with a business of providing IT solutions and services. I worked on EPRO – staff ERP system, a project based on business process management which includes modules such as secure login, timesheets, accounting (payroll solutions, invoices), professional services automation module (onboarding, immigration & legal compliance and documentation portal), talent HR management (hiring, marketing, performance review), etc.</p>
+				  <hr>
+				</div>
+				<div class="w3-container">
+				  <h6 class="w3-text-teal w3-right w3-mobile"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+				  <h5 class="w3-opacity"><b>Intern</b></h5>
+				  <h5 class="w3-medium"><b>Daffy Healthcare Pvt Ltd</b></h5>
+				  <p>Daffy Group is a leading manufacturer of healthcare products, personal care products & nutritional supplements. The project I worked on was to design, develop and implement new information system to improve organization’s efficiency and effectiveness. The goal was to research, analyse, identify barriers and challenges in the flow of information within the existing system and provide technical solutions to implement the same.</p>
+				  <hr>
+				</div>
+			  </div>
+
+			  <div class="w3-container w3-card w3-white">
+				<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+				<div class="w3-container">
+				  <h6 class="w3-text-teal w3-right w3-mobile"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+				  <h5 class="w3-opacity"><b>Master of Business Administration</b></h5>
+				  <h5 class="w3-medium"><b>Indiana University of Pennsylvania</b></h5>
+				  
+				  <p>Management in IT motivated me to pursue MBA program with a major in Management Information System, accredited by AACSB International</p>
+				  <hr>
+				</div>
+				<div class="w3-container">
+				  <h6 class="w3-text-teal w3-right w3-mobile"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2015</h6>
+				  <h5 class="w3-opacity"><b>Bachelor of Computer Application</b></h5>
+				  <h5 class="w3-medium"><b>PES University, Bangalore</b></h5>
+				  
+				  <p>Graduated from one of the best colleges in India. Studied advanced programming languages, network, software engg & application of computers</p>
+				  <hr>
+				</div>
+			  </div>
+
+			<!-- End Right Column -->
+			</div>
+			
+		  <!-- End Grid -->
+		  </div>
+		  
+		  <!-- End Page Container -->
 		</div>
-	</div>
-	<!-- End of HEADER -->
-	
-	<BR><BR><BR><BR><BR><BR>
-	
+
+		<footer class="w3-container w3-teal w3-center w3-margin-top">
+		  <p>&copy; 2017 Arvind Sreenivas</p>
+		</footer>
 	</body>
-</html
-	
+</html>
