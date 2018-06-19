@@ -59,6 +59,57 @@
 
 		   $("#progressbar").css('width', position+'%');
 
+		});		
+	</script>
+	
+	<script>
+		function checkContactForm(){
+			// Disable submit button until form is valid
+			if(document.getElementById('customer').value && 
+				document.getElementById('contact').value && 
+				document.getElementById('message').value){ 
+					document.getElementById('contactEmailButton').disabled = false; 
+			} else {
+				document.getElementById('contactEmailButton').disabled = true;
+			}
+		}
+		
+		// FORM ACTION
+		window.addEventListener("load", function () {
+		  function sendData() {
+			var XHR = new XMLHttpRequest();
+
+			// Bind the FormData object and the form element
+			var FD = new FormData(form);
+
+			// Define what happens on successful data submission
+			XHR.addEventListener("load", function(event) {
+			  // alert(event.target.responseText);
+			  var obj = JSON.parse(event.target.responseText);
+			  alert(obj.message);
+			});
+
+			// Define what happens in case of error
+			XHR.addEventListener("error", function(event) {
+			  alert('Oops! Something went wrong.');
+			});
+
+			// Set up our request															// EDIT URL 
+			XHR.open("POST", "https://script.google.com/macros/s/AKfycbyKyPpsDMOgIKYHJ1MeITsKO5p9KPq_UFUStIGCUKE3pnXEhrk/exec");
+
+			// The data sent is what the user provided in the form
+			XHR.send(FD);
+		  }
+		 
+		  // Access the form element...
+		  var form = document.getElementById("myForm");
+
+		  // ...and take over its submit event.
+		  form.addEventListener("submit", function (event) {
+			event.preventDefault();
+
+			sendData();
+		  });
 		});
 	</script>
 		
@@ -77,7 +128,10 @@
 		<div id="headerCover" class="container-fluid" style=" ">
 	
 			<!-- Avatar -->
-			<img id="avatar" src="images/pose3.png" alt="AvatarPic">
+			<img id="avatar" src="images/pose3.png" alt="AvatarPic" >
+			<a href="#contactme">
+				<input id="hireMeBtn" type="button" value="HIRE ME">
+			</a>
 			
 			<!-- Name Plate & Role -->
 			<h1 id="namePlate">
@@ -450,36 +504,37 @@
 	</div>
 	
 	
-	<div id="contactme" class="container" style='background-color: #f7f7f7;'>
-		<div class="container" style='background-color: #f7f7f7; border-top:65px solid rgba(0, 0, 0, 0.1);border-bottom:100px solid rgba(0, 0, 0, 0.1);border-left:15px solid rgba(0, 0, 0, 0.1);border-right:15px solid rgba(0, 0, 0, 0.1);'>
-			<h2>Contact Arvind</h2>
+	<div id="contactme" class="col-md-12 " style="background-color: lightgrey;  ">
+	<div class="col-md-6 mx-auto" style="padding:30px; background-color: white; border-top:65px solid lightgrey;border-bottom:100px solid lightgrey;border-left:15px solid lightgrey;border-right:15px solidlightgrey; ">
+		<div id="contactMeTitle" class="" style="font-size:30px; font-weight:400px; color:black; text-align:left; padding:20px;">
+			Contact Arvind
+		</div>
+		<div class="container mx-auto" style="">
 			<form id='myForm'>
 				<input type='hidden' id='req' name='req' value='1'>
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="customer" name="customer" class="form-control mandatory" placeholder="Your Full Name" onchange='checkContactForm()' style='background-color:white;' required>
+						<input type="text" id="customer" name="customer" class="form-control form-control-lg mandatory" placeholder="Your Full Name" onchange='checkContactForm()' style='background-color:white;' required>
 					</div>
 				</div>
 				
 				<div class="row form-group">
 					<div class="col-md-12">		
-						<input type="text" id="contact" name="contact" class="form-control mandatory" placeholder="Your Email / Phone No" onchange='checkContactForm()' style='background-color:white;' required>
+						<input type="text" id="contact" name="contact" class="form-control form-control-lg mandatory" placeholder="Your Email / Phone No" onchange='checkContactForm()' style='background-color:white;' required>
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea id="message" name="message" cols="30" rows="10" class="form-control mandatory" placeholder="Type Your Message Here" onchange='checkContactForm()' style='background-color:white;' required></textarea>
+						<textarea id="message" name="message" cols="30" rows="10" class="form-control form-control-lg mandatory" placeholder="Type Your Message Here" onchange='checkContactForm()' style='background-color:white;' required></textarea>
 					</div>
 				</div>
 				<div class="form-group">
-					<button type="submit" id='contactEmailButton' class="btn btn-primary btn-lg" style="letter-spacing: 2px;" onclick='launch()'>SEND MESSAGE</button>
+					<button disabled type="submit" id='contactEmailButton' class="btn btn-primary btn-lg" style="letter-spacing: 2px;" onclick='launch()'>SEND MESSAGE</button>
 				</div>
 			</form>	
-			<div id="resultDIV">
-				Thank you for your message. Arvind usually responds within 30 mins. 
-			</div>
 		</div>
+	</div>
 	</div>
 
 	<!-- CSSLLC Modal -->
