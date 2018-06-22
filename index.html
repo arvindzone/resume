@@ -10,7 +10,22 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
 	<style>
 		html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+		a {
+		text-decoration: underline dotted orange;
+		}
 		.w3-orangetexttheme {color:#ff9000 !important}
+		
+		/*  DEVICE BREAKPOINTS */
+		@media screen and (max-width: 768px) {
+			#namePlate {
+				font-size: 30px;
+			}			
+		}
+		@media screen and (min-width: 769px) {
+			#namePlate {
+				font-size: 36px;
+			}			
+		}
 	</style>
 	
 	<body class="w3-light-grey">
@@ -27,7 +42,7 @@
 				<div class="w3-display-container w3-center w3-animate-opacity"> <br><br>
 				  <img src="images/pose3.png" style="width:200px; height:200px; border-radius: 50%;" alt="Avatar"> <br><br>
 				  <div class="w3-display-bottom w3-container w3-text-orange" >
-					<h2 class="w3-xxlarge w3-orangetexttheme w3-animate-opacity" style="font-family: Kaushan Script, cursive; -webkit-transform: rotate(-5deg); 
+					<h2 id="namePlate" class="w3-orangetexttheme w3-animate-opacity" style="font-family: Kaushan Script, cursive; -webkit-transform: rotate(-5deg); 
 						-moz-transform: rotate(-5deg); -ms-transform: rotate(-5deg); -o-transform: rotate(-5deg); transform: rotate(-5deg); ">
 					- Arvind Sreenivas -</h2>
 				  </div>
@@ -39,6 +54,8 @@
 				  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>+91 8147149140</p>
 				  <p><i class="fa fa-commenting fa-fw w3-margin-right w3-large w3-text-orange"></i>English, Kannada, Telugu, Tamil</p>
 				  <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-orange"></i>linkedin.com/in/arvindzone</p>
+				  <p><a href="https://drive.google.com/file/d/19Fvr025vezdZlhcrYnxc8zUH8D91IrBs/view" target="_blank">
+				  <i class="fa fa-paper-plane fa-fw w3-margin-right w3-large w3-text-orange"></i>View Full Resume</a></p>
 				  
 				  <hr>
 				  
@@ -51,27 +68,27 @@
 				  <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-orange"></i>Technical Skills</b></p>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:90%">&nbsp;&nbsp;&nbsp;&nbsp; HTML, CSS, JS, PHP</div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:90%">&nbsp;&nbsp; HTML, CSS, JS, PHP</div>
 				  </div>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:75%">&nbsp;&nbsp;&nbsp;&nbsp; Java, Python, R, MEAN</div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:75%">&nbsp;&nbsp; Java, Python, R</div>
 				  </div>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:85%">&nbsp;&nbsp;&nbsp;&nbsp; MEAN Stack </div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:85%">&nbsp;&nbsp; MEAN Stack </div>
 				  </div>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:70%">&nbsp;&nbsp;&nbsp;&nbsp; AWS, Selenium</div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:60%">&nbsp;&nbsp; AWS, GCP</div>
 				  </div>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:80%">&nbsp;&nbsp;&nbsp;&nbsp; SQL, NoSQL</div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:80%">&nbsp;&nbsp; SQL, NoSQL</div>
 				  </div>
 				  <p></p>
 				  <div class="w3-light-grey w3-round-xlarge">
-					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:75%">&nbsp;&nbsp;&nbsp;&nbsp; JIRA, HPQC, Visio</div>
+					<div class="w3-round-xlarge w3-orange w3-text-white" style="height:22px;width:70%">&nbsp;&nbsp; JIRA, Selenium</div>
 				  </div>
 				  <br>
 				</div>
